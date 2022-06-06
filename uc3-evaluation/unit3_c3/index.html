@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    #navbar {
+    display: grid;
+    padding: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+    background-color: #faebd7;
+    justify-items: end;
+    align-items: center;
+}
+form {
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    background-color: antiquewhite;
+    padding: 30px;
+}
+input[type="text" i] {
+    padding: 10px 20px 10px 20px;
+}
+button#submit{
+  padding: 10px 20px 10px 20px;
+}
+  </style>
+  <body>
+    <div id="navbar">
+      <h3>Sign Up</h3>
+      <h1 id="wallet_balance"></h1>
+      <a href="voucher.html">Purchase Voucher</a>
+    </div>
+      <form action="">
+        <input type="text" placeholder="Enter name" id="name" ><br><br>
+        <input type="text" placeholder="Enter email" id="email"><br><br>
+        <input type="text" placeholder="Address" id="address" ><br><br>
+        <input type="number" placeholder="Enter Amount" id="amount"><br><br>
+        <button id="submit" >Submit</button>
+      </form>
+    
+  </body>
+</html>
+<script src="scripts/main.js"></script>
