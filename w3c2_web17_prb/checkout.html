@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0040ff;
+    color: white;
+    margin-bottom: 20px;
+}
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #data {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+        button {
+    cursor: pointer;
+    transform: translate(100px);
+    padding: 10px;
+    border: inset;
+    background-color: rgb(4, 15, 45);
+    color: white;
+    font-size: 15px;
+}
+
+input[type="number" i] {
+    padding: 10px 20px;
+    border: solid black 3px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="movies.html">Movies</a></h2>
+        <h2><a href="checkout.html">Checkout</a></h2>
+        <h2 id="sumone"></h2>
+    </div>
+    <input type="number" name="" id="masai" placeholder="tickets">
+    <button onclick="connectme()">Conform-Booking</button>
+    <br>
+    <div id="data"></div>
+</body>
+</html>
+<script src="checkout.js"></script>

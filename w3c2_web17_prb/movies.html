@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            border: 2px solid rgb(200, 196, 196);
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+        #boss{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(50,auto);
+            grid-gap: 10px;
+        }
+        #boss div{
+            box-shadow: 2px 2px 3px black;
+            border-radius: 10px;
+            width: 300px;
+            height: auto;
+            margin-left: 50px;
+        }
+        #sha {
+    cursor: pointer;
+    transform: translate(100px);
+    padding: 10px;
+    border: inset;
+    background-color: rgb(4, 15, 45);
+    color: white;
+    font-size: 15px;
+}
+
+        input {
+    width: 20%;
+    margin-left: 110px;
+    padding: 12px;
+    font-size: 20px;
+    margin-left: 500px;
+    margin-top: 20PX;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+   
+    gap: 20px;
+    margin: auto;
+    width: 98%;
+}
+
+img {
+    height: 450px;
+    width: 300px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h2><a href="index.html">Home</a></h2>
+        <h2><a href="movies.html">Movies</a></h2>
+        <h2><a href="checkout.html">Checkout</a></h2>
+        <h2 id="sum"></h2>
+    </div>
+    <br>
+    <input type="search" name="" id="boom" oninput="main(hellobro,1000)" placeholder="Search-Moves">
+    <br>
+    <div id="container"></div>
+</body>
+</html>
+<script src="movie.js"></script>
